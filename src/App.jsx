@@ -1,26 +1,12 @@
+import React from "react";
+import DataFetch from "./Hooks/DataFetch";
 
-
-import { useState, useEffect } from 'react'
-import DataFetch from './Hooks/DataFetch'
-
-
-function App() {
-  const{apiData, error} = useState()
-
+const App = () => {
   return (
-    <>
-      <div className='flex justify-center '>
-       <div>image</div>
+    <div className="bg-gray-100 min-h-screen flex items-center justify-center">
+      <DataFetch />
+    </div>
+  );
+};
 
-      
-
-       
-        
-
-      </div>
-
-    </>
-  )
-}
-
-export default App
+export default App;
